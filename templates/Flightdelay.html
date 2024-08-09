@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Delay Prediction</title>
+</head>
+<body>
+    <h1>Flight Delay Prediction</h1>
+    <form action="/result" method="post">
+        <label for="fno">Flight Number:</label>
+        <input type="text" id="fno" name="fno" required><br> <br>
+
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" min="1" max="12" required><br><br>
+
+        <label for="daym">Day of Month:</label>
+        <input type="number" id="daym" name="daym" min="1" max="31" required><br><br>
+
+        <label for="dayw">Day of Week:</label>
+        <input type="number" id="dayw" name="dayw" min="1" max="7" required><br><br>
+
+        <label for="sdt">Scheduled Departure Time (in minutes):</label>
+        <input type="number" id="sdt" name="sdt" required><br><br>
+
+        <label for="adt">Actual Departure Time (in minutes):</label>
+        <input type="number" id="adt" name="adt" required><br><br>
+
+        <label for="sat">Scheduled Arrival Time (in minutes):</label>
+        <input type="number" id="sat" name="sat" required><br><br>
+
+        <label for="org">Origin Airport:</label>
+        <select id="org" name="org" required>
+            <option value="ATL">ATL</option>
+            <option value="DTW">DTW</option>
+            <option value="JFK">JFK</option>
+            <option value="MSP">MSP</option>
+            <option value="SEA">SEA</option>
+        </select><br><br>
+
+        <label for="dest">Destination Airport:</label>
+        <select id="dest" name="dest" required>
+            <option value="ATL">ATL</option>
+            <option value="DTW">DTW</option>
+            <option value="JFK">JFK</option>
+            <option value="MSP">MSP</option>
+            <option value="SEA">SEA</option>
+        </select><br>
+
+        <button type="submit">Submit</button><br>
+    </form>
+</body>
+</html>

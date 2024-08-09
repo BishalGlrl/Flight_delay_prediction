@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Flight Delay Prediction Result</h1>
+    {% if prediction == 0 %}
+        <p>Your flight will not be delayed.</p>
+    {% elif prediction == 1 %}
+        <p>Your flight will be delayed.</p>
+    {% else %}
+        <p>Prediction result is not available.</p>
+    {% endif %}
+    <a href="/">Go Back</a>
+</body>
+</html>
